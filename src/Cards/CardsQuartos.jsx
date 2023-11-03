@@ -1,13 +1,12 @@
 import React from 'react'
 import { makeStyles} from '@material-ui/core'
+import agenda from './Agenda1.png'
+
 
 
 
 import './Cards.css'
-import SwiperPiramide from '../Swiper/ImagesPiramide/Swiper';
-import Swiper from '../Swiper/Swiper';
-import SwiperSabia from '../Swiper/ImagesSuíteSabiá/sabia';
-import SwiperTucano from '../Swiper/ImagesSuíteTucano/tucano';
+
 
 
 
@@ -142,56 +141,13 @@ function CardsQuartos() {
   return (
     <>
    
-   <div className={classes.title2}> Quartos</div>
+   <div className={classes.title2}> Programação</div>
         <div className={classes.yellow}>
         
-        <div className={classes.texto}><p> Aruna Casa Piramide<br></br> <br></br>
-        <span className={classes.description}>A Aruna Casa Pirâmide faz parte das estruturas do Aruna, um pequeno e exclusivo condomínio que é um verdadeiro refúgio aconchegante. Está localizado no alto da montanha, com o privilégio de uma vista exuberante para o mar e algumas ilhas da região. Isolado do sistema urbano, em meio a natureza preservada do sul da Ilha de Florianópolis, o Aruna foi no passado um Eco Spa, após uma grande reforma, mudamos a proposta para locações pontuais de algumas unidades.</span>
         
-        <a href="/piramide" className={classes.button}> Saiba Mais</a>
-        </p>
-        </div>
-        
-        
-    <SwiperPiramide/>
-    
-    </div>
-    <div className={classes.blue}>
-    <div className={classes.texto}><p> Casa Refúgio Beija Flor<br></br> <br></br>
-        <span className={classes.description}>A Casa Refúgio Beija Flor faz parte das estruturas do Aruna, um pequeno e exclusivo condomínio que é um verdadeiro refúgio aconchegante. Está localizado no alto da montanha, com o privilégio de uma vista exuberante para o mar e algumas ilhas da região. Isolado do sistema urbano, em meio a natureza preservada do sul da Ilha de Florianópolis, o Aruna foi no passado um Eco Spa, após uma grande reforma, mudamos a proposta para locações pontuais de algumas unidades.</span>
-        
-        <a href="/beija-flor" className={classes.button}> Saiba Mais</a>
-        </p>
-        
-        
-    </div>
-    <Swiper/>
-   
-    </div>
-   
-    <div className={classes.yellow}>
-        <div className={classes.texto}><p> Suíte Sabiá<br></br> <br></br>
-        <span className={classes.description}>A suíte Sabiá faz parte das estruturas do Aruna, um pequeno e exclusivo condomínio que é um verdadeiro refúgio aconchegante. Está localizado no alto da montanha, com o privilégio de uma vista exuberante para o mar e algumas ilhas da região. Isolado do sistema urbano, em meio a natureza preservada do sul da Ilha de Florianópolis, o Aruna foi no passado um Eco Spa, após uma grande reforma, mudamos a proposta para locações pontuais de algumas unidades.</span>
-        
-        <a href="/sabia" className={classes.button}> Saiba Mais</a>
-        </p>
-        </div>
-        
-        
-    <SwiperSabia/>
-    
-    </div>
       
-    <div className={classes.blue}>
-    <div className={classes.texto}><p> Suíte Tucano<br></br> <br></br>
-        <span className={classes.description}>A suíte Tucano é uma acomodação no estilo rústico, que faz parte das estruturas do Aruna, um pequeno e exclusivo condomínio que é um verdadeiro refúgio aconchegante. Está localizado no alto da montanha, com o privilégio de uma vista exuberante para o mar e algumas ilhas da região. Isolado do sistema urbano, em meio a natureza preservada do sul da Ilha de Florianópolis, o Aruna foi no passado um Eco Spa, após uma grande reforma, mudamos a proposta para locações pontuais de algumas unidades.</span>
-        
-        <a href="/tucano" className={classes.button}> Saiba Mais</a>
-        </p>
-        
-        
-    </div>
-    <SwiperTucano/>
+        <img src={agenda} alt="Logo" />
+    
    
     </div>
        
@@ -202,19 +158,10 @@ function CardsQuartos() {
   
 
         
-        <div className={classes.reserva}><p>Faça sua reserva  </p>
         
-        <span className={classes.description}>
-                Faça sua reserva entrando em contato conosco ou através de uma das empresas parceiras:
-
-        </span>
-            <div className={classes.brand}>
-            <a href="https://api.whatsapp.com/send?phone=5548992061471" target="_blank" rel="noreferrer"><i class="icon2 fa-brands fa-whatsapp"></i></a>
-        <a href="https://linktr.ee/arunafloripa" target="_blank" rel="noreferrer" ><i className="icon2 fa-brands fa-airbnb"></i></a>
-        </div>
      
     
-       </div>
+    
         
         
    

@@ -24,9 +24,9 @@ const useStyles = makeStyles ((theme) => ({
        subtitle: {
 
       width: '100%',
-      fontSize: '3em',
+      fontSize: '4em',
       textAlign: 'center',
-      fontFamily:'Montserrat',
+      fontFamily:'Elephant V1, sans-serif',
       color: 'black',
 
       "@media (max-width: 900px)": {

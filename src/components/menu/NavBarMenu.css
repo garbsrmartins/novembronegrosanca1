@@ -5,7 +5,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   background-repeat: repeat;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Elephant';
   
 }
 .main-nav{
@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: rgb(0,0,0);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Elephant', sans-serif;
   z-index: 3;
 
   
@@ -70,7 +70,7 @@ ul.main-menu {
   margin: 0 100px 0 auto;
   padding: 0;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Elephant V1', sans-serif;
  
   z-index: 7;
 }
