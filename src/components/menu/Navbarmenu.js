@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import {NavLink, Link} from 'react-router-dom';
-import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
+import {NavLink} from 'react-router-dom';
+import {FiAlignRight,FiXCircle } from "react-icons/fi";
 
 
 import './NavBarMenu.css'
