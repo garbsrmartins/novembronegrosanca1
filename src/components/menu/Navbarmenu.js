@@ -22,7 +22,7 @@ const Navbarmenu2 = () => {
         boxClass.push('');
     }
 
-    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+    const [isMenuSubMenu] = useState(false);
       
    ;
     
