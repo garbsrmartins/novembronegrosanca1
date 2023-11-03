@@ -9,7 +9,7 @@ const useStyles = makeStyles ((theme) => ({
 
     root: {
 
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/TemplateSlide_capa.jpeg'})`,
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/TemplateSlide_capa.jpg'})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
         display: 'flex',
