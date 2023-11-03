@@ -18,13 +18,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   z-index: 3;
 
-  width: 100vw;
+  
   text-decoration: none;
 }
 .container {
   width: 100%;
-	padding-right:15px;
-	padding-left:15px;
 	margin-right:auto;
 	margin-left:auto
 }
@@ -199,10 +197,10 @@ li {
   margin: 7px 27px;
 }
 .menu-item:hover > a{
-    background-color: #eeeeee  !important;
+    background-color: #3f3f3f  !important;
 }
 .menu-item .sub__menus li:hover a{
-  color: #b1b1b1 !important;
+  color: #3f3f3f !important;
 }
 
 .header__middle__logo img{
@@ -218,7 +216,7 @@ li {
 .header__middle__logo {width: 77%;}
 .header__middle__menus {width: 20%;}
 .header__middle__logo img {max-width: 197px;margin: 27px 0 0 0;}
-.main-nav .menubar__button:hover {background-color: #dadada;}
+.main-nav .menubar__button:hover {background-color: #3f3f3f;}
 
 
 .nav-logoCell {
