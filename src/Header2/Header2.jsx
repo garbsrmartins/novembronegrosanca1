@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../images/LogoAruna3.png'
 import { makeStyles} from '@material-ui/core'
 import './Header2.css'
 
