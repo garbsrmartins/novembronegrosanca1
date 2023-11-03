@@ -75,8 +75,6 @@ const Navbarmenu2 = () => {
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/contato'}> Contato </NavLink> </li>
                     <span className='icons'>
                     <a href="https://www.instagram.com/arunaespacoregenerativo" target="_blank" rel="noreferrer" ><i className="topIcon fa-brands fa-instagram"></i></a>
-                    <a href="https://linktr.ee/arunafloripa" target="_blank" rel="noreferrer" ><i className="topIcon fa-brands fa-airbnb"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5548992061471" target="_blank" rel="noreferrer"><i class="topIcon fa-brands fa-whatsapp"></i></a>
                     </span>
                     </ul>
                     
