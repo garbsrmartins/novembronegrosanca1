@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
-import {NavLink} from 'react-router-dom';
-import {FiAlignRight,FiXCircle} from "react-icons/fi";
+import {NavLink, Link} from 'react-router-dom';
+import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 
 
 import './NavBarMenu.css'
@@ -24,9 +24,7 @@ const Navbarmenu2 = () => {
 
     const [isMenuSubMenu, setMenuSubMenu] = useState(false);
       
-    const toggleSubmenu = () => {
-      setMenuSubMenu(isMenuSubMenu === false ? true : false);
-    };
+   ;
     
     let boxClassSubMenu = ["sub__menus"];
     if(isMenuSubMenu) {
@@ -63,9 +61,8 @@ const Navbarmenu2 = () => {
                     <li  className="menu-item" >
                         <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Home </NavLink> 
                     </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/programacao'}> Programação </NavLink> </li>
                     
-                  
+                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/programacao'}> Programação </NavLink> </li>
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/contato'}> Contato </NavLink> </li>
                     <span className='icons'>
                     <a href="https://www.instagram.com/arunaespacoregenerativo" target="_blank" rel="noreferrer" ><i className="topIcon fa-brands fa-instagram"></i></a>
