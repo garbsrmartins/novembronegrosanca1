@@ -55,7 +55,7 @@ const classes = useStyles ();
       <div className={classes.logoback}>
       <img className='imgHeader' src={logo} alt="texto"/>
       </div>
-      <p className={classes.subtitle}>Espaço Regenerativo</p>
+      <p className={classes.subtitle}>Teste</p>
     
     </div>
     
