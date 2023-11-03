@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
-import logo from '../../images/LogoNav.png'
+/*import logo from '../../images/LogoNav.png'*/
 
 import './NavBarMenu.css'
 
@@ -47,7 +47,7 @@ const Navbarmenu2 = () => {
                 
                 <div className="header__middle__menus">
                     <nav className="main-nav " >
-                    <a href='/'><img className='nav-logoCell' src={logo} alt='logo'/> </a>
+                    <a href='/'>{/*<img className='nav-logoCell' src={logo} alt='logo'/>*/} </a>
                     {/* Responsive Menu Button */}
                     {isResponsiveclose === true ? <> 
                         
