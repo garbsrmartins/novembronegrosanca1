@@ -9,7 +9,7 @@ const useStyles = makeStyles ((theme) => ({
 
     root: {
 
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/Mar.jpeg'})`,
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/TemplateSlide_capa.jpeg'})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
         display: 'flex',
@@ -55,7 +55,7 @@ const classes = useStyles ();
       <div className={classes.logoback}>
       <img className='imgHeader' src={logo} alt="texto"/>
       </div>
-      <p className={classes.subtitle}>Teste</p>
+      <p className={classes.subtitle}>Novembro Negro São Carlos</p>
     
     </div>
     
