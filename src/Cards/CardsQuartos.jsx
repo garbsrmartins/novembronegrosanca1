@@ -44,7 +44,12 @@ margin: 'auto',
 },
 
 
+background:{ 
 
+  backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize:'100%'
+},
 
 
 
@@ -117,6 +122,7 @@ blue: {
 },
 title2: {
 
+  fontFamily: 'Elephant V1',
   paddingTop: '60px',
   textAlign:'center',
   fontSize: '3em',
@@ -140,15 +146,16 @@ function CardsQuartos() {
     const classes = useStyles ();
   return (
     <>
-   
+   <div className={classes.background}>
    <div className={classes.title2}> Programação</div>
-        <div className={classes.yellow}>
+        
         
         
       
         <img src={agenda} alt="Logo" />
     
    
+    
     </div>
        
         

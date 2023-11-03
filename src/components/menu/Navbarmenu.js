@@ -63,9 +63,9 @@ const Navbarmenu2 = () => {
                     </li>
                     
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/programacao'}> Programação </NavLink> </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/contato'}> Contato </NavLink> </li>
+                    
                     <span className='icons'>
-                    <a href="https://www.instagram.com/arunaespacoregenerativo" target="_blank" rel="noreferrer" ><i className="topIcon fa-brands fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/novembronegrosanca/" target="_blank" rel="noreferrer" ><i className="topIcon fa-brands fa-instagram"></i></a>
                     </span>
                     </ul>
                     
