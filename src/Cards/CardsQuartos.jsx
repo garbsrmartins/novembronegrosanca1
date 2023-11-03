@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles} from '@material-ui/core'
-import agenda from './Agenda1.png'
+
 
 
 
@@ -48,7 +48,8 @@ background:{
 
   backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize:'100%'
+  backgroundSize:'cover',
+  minHeight: '100vh'
 },
 
 
@@ -136,6 +137,23 @@ title2: {
     paddingTop: '60px',
    
   },
+},
+cards: {
+
+  fontFamily: 'Elephant V1',
+  fontSize: '2em',
+  width: '50%',
+  margin: 'auto',
+  color: 'dark-gray'
+
+},
+data: {
+
+  fontFamily: 'Elephant V1',
+  fontSize: '2em',
+  width: '50%',
+  margin: 'auto'
+
 }
 
 
@@ -148,11 +166,11 @@ function CardsQuartos() {
     <>
    <div className={classes.background}>
    <div className={classes.title2}> Programação</div>
-        
-        
+    <p className={classes.data}>Dia 5</p> <br></br>
+   <p className={classes.cards}>Show Leci Brandão e Rappin Hood<br></br>Prefeitura de São Carlos (CEMAC)<br></br> 20h às 22h<br></br> Av. Bruno Ruggiero </p>
         
       
-        <img src={agenda} alt="Logo" />
+        
     
    
     

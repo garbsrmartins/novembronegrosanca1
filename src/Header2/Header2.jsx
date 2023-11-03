@@ -7,14 +7,14 @@ import './Header2.css'
 const useStyles = makeStyles ((theme) => ({
 
     root: {
-
+        
       backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/TemplateSlide_capa.jpg'})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
+        height: '90vh',
         width: '100%',
         flexDirection: 'column'
         
@@ -24,10 +24,11 @@ const useStyles = makeStyles ((theme) => ({
        subtitle: {
 
       width: '100%',
-      fontSize: '4em',
+      fontSize: '3em',
       textAlign: 'center',
       fontFamily:'Elephant V1, sans-serif',
       color: 'black',
+      margin: '0',
 
       "@media (max-width: 900px)": {
         fontSize: '2em',
@@ -40,7 +41,29 @@ const useStyles = makeStyles ((theme) => ({
     
 
   },
-  }
+  },
+
+  subtitle1: {
+
+    width: '100%',
+    fontSize: '2em',
+    textAlign: 'center',
+    fontFamily:'Elephant V1, sans-serif',
+    color: 'black',
+    margin: '0',
+
+    "@media (max-width: 900px)": {
+      fontSize: '1.5em',
+    
+
+  },
+
+  "@media (max-width: 500px)": {
+    fontSize: '1.2em',
+  
+
+},
+}
     
 
 }))
@@ -54,7 +77,8 @@ const classes = useStyles ();
       <div className={classes.logoback}>
     
       </div>
-      <p className={classes.subtitle}>Novembro Negro São Carlos</p>
+      <p className={classes.subtitle}>Novembro Negro</p>
+      <p className={classes.subtitle1}>Agenda unificada de São Carlos</p>
     
     </div>
     

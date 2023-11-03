@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import logos from './Regua de logos Novembro Negro_cor branca sem fundo.png'
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
 
 
         
-        <i className="botIcon fa-brands fa-instagram"></i>
+       <img src={logos} alt='logos'/>
         
       
         </div>

@@ -2,7 +2,7 @@ import './Quartos.css'
 import { makeStyles} from '@material-ui/core'
 
 
-import Footer from '../../Footer/Footer'
+
 
 
 import CardsQuartos from '../../Cards/CardsQuartos'
@@ -53,7 +53,7 @@ function Quartos() {
     
     <CardsQuartos/>
     
-   <Footer/>
+   
     </div> 
     </div>
    
