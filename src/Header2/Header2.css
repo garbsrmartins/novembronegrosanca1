@@ -1,0 +1,17 @@
+.imgHeader {
+
+    width:40%;
+    align-items: center;
+    margin: auto;
+    display: block;
+    
+}
+
+@media (max-width:1000px) {
+
+    .imgHeader {
+
+        width:40vw;
+    }
+    
+}

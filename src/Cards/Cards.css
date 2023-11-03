@@ -1,0 +1,33 @@
+.imageCard {
+
+width: 50%;
+border-radius: 100em;
+margin: 100px auto;
+
+}
+
+.topIconCon {
+
+    margin: 30px;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.icon {
+
+    margin: 30px;
+  color: white;
+
+}
+
+.icon2 {
+
+  margin: 30px;
+color: black;
+
+}
+
+
+
