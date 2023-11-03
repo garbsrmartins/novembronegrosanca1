@@ -53,7 +53,7 @@ const classes = useStyles ();
     <div>
     <div className={classes.root}>
       <div className={classes.logoback}>
-      <img className='imgHeader' src={logo} alt="texto"/>
+    
       </div>
       <p className={classes.subtitle}>Novembro Negro São Carlos</p>
     
