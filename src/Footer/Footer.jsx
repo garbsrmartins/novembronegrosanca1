@@ -10,7 +10,7 @@ function Footer() {
 
 
         
-       <img src={logos} alt='logos'/>
+       <img src={logos} className='logos' alt='logos'/>
         
       
         </div>

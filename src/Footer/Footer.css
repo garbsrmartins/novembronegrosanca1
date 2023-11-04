@@ -15,11 +15,9 @@ vertical-align: middle;
 line-height: normal;
 padding: 7vh;
 
+
 }
-.botIcon {
-    margin-top: 0.5em;
-    font-size: 20px;
-    margin-right: 10px;
-    color: white;
-    cursor: pointer  ;
+.logos {
+    width: 60vw;
+   
 }
