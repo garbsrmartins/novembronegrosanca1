@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles} from '@material-ui/core'
-import leci from './Leci.png'
+import separador from './Separador.png'
 
 
 
@@ -126,7 +126,7 @@ title2: {
   fontFamily: 'Elephant V1',
   paddingTop: '60px',
   textAlign:'center',
-  fontSize: '3em',
+  fontSize: '2em',
   height: '30vh',
   alignItems: 'center',
   justifyContent: 'center',
@@ -141,17 +141,18 @@ title2: {
 cards: {
 
   fontFamily: 'Elephant V1',
-  fontSize: '1.5em',
+  fontSize: '1.1em',
   width: '50%',
   margin: 'auto',
   color: 'dark-gray',
   paddingBottom: '2em',
+  lineHeight: '1.5em'
 
 },
 data: {
 
   fontFamily: 'Elephant V1',
-  fontSize: '2em',
+  fontSize: '1.5em',
   width: '50%',
   margin: 'auto'
 
@@ -164,7 +165,7 @@ image: {
   alignItems: 'center',
   display: 'block',
   padding: '1em',
-  maxWidth: '30%'
+  maxWidth: '50%'
   
 
 }
@@ -182,13 +183,13 @@ function CardsQuartos() {
    <div className={classes.title2}> Programação</div>
     <p className={classes.data}>Dia 5</p> <br></br>
    <p className={classes.cards}>Show Leci Brandão e Rappin Hood<br></br>Prefeitura de São Carlos (CEMAC)<br></br> 20h às 22h<br></br> Av. Bruno Ruggiero  </p>
-   <img src={leci} className={classes.image} alt='teste'/>
+   <img src={separador} className={classes.image} alt="separador"/>
    
    <p className={classes.data}>Dia 8</p> <br></br>
    <p className={classes.cards}>Espetáculo de Dança - Iku - Núcleo Ajeum<br></br> 20h<br></br>  SESC, Teatro</p>  
    <p className={classes.cards}>Roda de Conversa  “Mulheres Pretas e Afroempreendedorismo: Protagonismo, participação social  e inovação para desenvolvimento local”.Abertura com Coral Soul Jazz <br></br> 19h30<br></br>  SENAC - Teatro</p>  
       
-   
+   <img src={separador} className={classes.image} alt="separador"/>
     
    
     
