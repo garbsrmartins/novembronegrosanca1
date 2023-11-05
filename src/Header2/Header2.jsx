@@ -19,7 +19,7 @@ const useStyles = makeStyles ((theme) => ({
         flexDirection: 'column',
 
         "@media (max-width: 900px)": {
-          backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/capa.png'})`
           
         
   
