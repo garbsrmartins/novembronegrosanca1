@@ -57,7 +57,7 @@ export default function Sobre() {
   return (
     <div className={classes.root}>
       <img src={separador} className={classes.image} alt="separador"/>
-      <p className={classes.sobre}>A “Agenda Unificada Novembro Negro - São Carlos é resultante de um mapeamento de atividades e ações que serão realizadas em novembro e estão voltadas para promoção da luta antirracista e para valorização da comunidade negra na nossa cidade.
+      <p className={classes.sobre}>A “Agenda Unificada Novembro Negro - São Carlos" é resultante de um mapeamento de atividades e ações que serão realizadas em novembro e estão voltadas para promoção da luta antirracista e para valorização da comunidade negra na nossa cidade.
 <br></br><br></br>
 É uma iniciativa conjunta e colaborativa de diversas instituições e da sociedade civil de São Carlos.
 <br></br><br></br>

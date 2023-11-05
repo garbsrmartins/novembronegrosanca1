@@ -16,7 +16,14 @@ const useStyles = makeStyles ((theme) => ({
         alignItems: 'center',
         height: '90vh',
         width: '100%',
-        flexDirection: 'column'
+        flexDirection: 'column',
+
+        "@media (max-width: 900px)": {
+          backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`
+          
+        
+  
+      }
         
         
     },
