@@ -268,7 +268,7 @@ function CardsQuartos() {
 
    <p className={classes.data}>Dia 28</p> <br></br>
    <p className={classes.cards}>Oficina - Do 0 à passarela <br></br>18h30<br></br>SESC</p>
-   <p className={classes.cards}>por uma saúde mental anti-racista<br></br>14h ás 17h<br></br>CASM/UFSCar</p> 
+   <p className={classes.cards}>Por uma saúde mental anti-racista<br></br>14h ás 17h<br></br>CASM/UFSCar</p> 
           
    <img src={separador} className={classes.image} alt="separador"/>
 
