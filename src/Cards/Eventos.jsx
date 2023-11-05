@@ -141,8 +141,8 @@ title2: {
 cards: {
 
   fontFamily: 'Elephant V1',
-  fontSize: '1.1em',
-  width: '50%',
+  fontSize: '1.3em',
+  width: '60%',
   margin: 'auto',
   color: 'dark-gray',
   paddingBottom: '2em',
@@ -153,7 +153,7 @@ data: {
 
   fontFamily: 'Elephant V1',
   fontSize: '1.5em',
-  width: '50%',
+  width: '60%',
   margin: 'auto'
 
 },
@@ -165,7 +165,7 @@ image: {
   alignItems: 'center',
   display: 'block',
   padding: '1em',
-  maxWidth: '50%'
+  width: '60%'
   
 
 }
@@ -214,6 +214,74 @@ function CardsQuartos() {
    <p className={classes.cards}>Cinema e Vídeo  <br></br> 19h30<br></br>  SESC, Teatro</p>  
        
    <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 19</p> <br></br>
+   <p className={classes.cards}>Batalha de MC e apresentação de Street Dance (Circuito Arena Especial)<br></br> 18h às 20h<br></br>  Prefeitura de São Carlos (CEMAC) -  Teatro de Arena</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 20</p> <br></br>
+   <p className={classes.cards}>Marcha pela verdade histórica africana em São Carlos<br></br> 12h30<br></br> Centro Afro Odette dos Santos</p>  
+   <p className={classes.cards}>Show com o sambista Leme<br></br> 16h<br></br>  SESC</p>  
+   <p className={classes.cards}>Apresentação do Coral Eu canto minha Africa<br></br> 15h<br></br>Teatro Municipal</p>  
+   <p className={classes.cards}>24ª Festa Afrodescente<br></br> 14h às 21h<br></br> Campo do Zuzão</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+   <p className={classes.data}>Dia 21</p> <br></br>
+   <p className={classes.cards}> Palestra com o  mestre quilombola e ativista político Nêgo Bispo <br></br> 20h<br></br>USP - Auditório “Sérgio Mascarenhas” IFSC</p> 
+   <p className={classes.cards}>Mostra Ecofalante, filme: "Essa Terra é Meu Quilombo"<br></br> Sessão 1: Sala 182 AT8 - 10h<br></br>Sessão 2: Sala 188 AT8 - 19h <br></br>  UFSCar</p>   
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+   <p className={classes.data}>Dia 22</p> <br></br>
+   <p className={classes.cards}>Palestra "O Negro no Empreendimento" - Palestrante: Celma Felipe, empreendedora social e produtora de eventos<br></br> 19h<br></br>ACISC - Auditório</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+    
+   <p className={classes.data}>Dia 24</p> <br></br>
+   <p className={classes.cards}>Afrosarau  <br></br> 17h - 19h<br></br>  UFSCAR, Teatro de Bolso</p> 
+   <p className={classes.cards}>Menu Musical - Nara Dom <br></br> 20h<br></br>  SESC, Área Externa</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 25</p> <br></br>
+   <p className={classes.cards}>Sonara Brasil<br></br> 13h30<br></br>  SESC, Sala de atividades corporais</p> 
+   <p className={classes.cards}>Malungo Ixi<br></br> 16h<br></br>SESC, Galpão</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+   <p className={classes.data}>Dia 26</p> <br></br>
+   <p className={classes.cards}>Feira da Economia Soldária:"Arte negra na praça" - Barracas tetmáticas, roda de capoeira e artistas locais<br></br>16h às 21h<br></br>Praça XV de Novembro</p> 
+   <p className={classes.cards}>Show - Tecnologias e Artes<br></br> 16h<br></br>  SESC, Área Externa</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 28</p> <br></br>
+   <p className={classes.cards}>Oficina - Do 0 à passarela <br></br>18h30<br></br>SESC</p>
+   <p className={classes.cards}>por uma saúde mental anti-racista<br></br>14h ás 17h<br></br>CASM/UFSCar</p> 
+          
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 29</p> <br></br>
+   <p className={classes.cards}>USP Filarmônica, com as solistas Chiara Santoro (soprano) e Denise de Freitas (mezzo-soprano), concerto em homenagem ao dia da Consciência Negra, com obras de artistas pretos, como Cruz e Souza, Henrique Alves de Mesquita e Dolores Duran, além de composições inéditas de Lucas Eduardo da Silva Galon, Silvia Maria Pires Cabrera Berg, Lucas Pigari, José Gustavo Julião de Camargo e Rubens Russomanno Ricciardi, que também será o regente deste espetáculo.<br></br> 20h<br></br> Catedral</p>  
+   <p className={classes.cards}>Oficina - Do 0 à passarela <br></br> 18h30<br></br>  SESC</p>  
+   <p className={classes.cards}>Black Tilsp: relações de gênero e etnia na comunidade surda brasileira<br></br>9h às 21h<br></br>UFSCar</p>  
+   <p className={classes.cards}>Premiação "Selo Carolina de Jesus<br></br> (horário a definir)<br></br> Câmara Municipal</p> 
+
+   <img src={separador} className={classes.image} alt="separador"/> 
+
+   <p className={classes.data}>Dia 30</p> <br></br>
+   <p className={classes.cards}>Oficina - Do 0 à passarela <br></br>18h30<br></br>SESC</p> 
+   <p className={classes.cards}>Oficina de Escrevivências com Daiane Silva<br></br> (horário a definir)<br></br>UFSCAR - NAP-Sala 02</p>  
+          
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 1 (Dezembro)</p> <br></br>
+   <p className={classes.cards}>Oficina - Do 0 à passarela <br></br>18h30<br></br>SESC</p> 
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 2 (Dezembro)</p> <br></br>
+   <p className={classes.cards}>Desfile - Do 0 à passarela <br></br>17h<br></br>SESC</p> 
+   <img src={separador} className={classes.image} alt="separador"/>
+   
     
    
     
