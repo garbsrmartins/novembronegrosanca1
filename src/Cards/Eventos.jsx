@@ -188,7 +188,31 @@ function CardsQuartos() {
    <p className={classes.data}>Dia 8</p> <br></br>
    <p className={classes.cards}>Espetáculo de Dança - Iku - Núcleo Ajeum<br></br> 20h<br></br>  SESC, Teatro</p>  
    <p className={classes.cards}>Roda de Conversa  “Mulheres Pretas e Afroempreendedorismo: Protagonismo, participação social  e inovação para desenvolvimento local”.Abertura com Coral Soul Jazz <br></br> 19h30<br></br>  SENAC - Teatro</p>  
-      
+    
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 9</p> <br></br>
+   <p className={classes.cards}>Tenor Jean William e Coral Afro Soul Jazz  - “Negra Voz: Negro spirituals e canções em yorubá"; Piano - Wesley Barreto; Percussão - Nego Doce ; Regência Coral Afro Soul Jazz - Sergio Alberto de Oliveira<br></br> 20h<br></br>  USP, IFSC</p>  
+        
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 13</p> <br></br>
+   <p className={classes.cards}>Mostra Ecofalante, filme: "Terras que Libertam" <br></br> 9h30<br></br>  UFSCar - sala 180 AT8</p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 14</p> <br></br>
+   <p className={classes.cards}>Palestra: “Arte, estética e representação no mundo afro-atlântico" com a Profa. Dra. Veronique Francis Universidade Paris Nanterre <br></br>  19h<br></br> NEAB/UFSCar - Auditório NA</p>  
+       
+   <p className={classes.cards}>Mostra Ecofalante, filme: "As Formigas e o Gafanhoto"  <br></br> 9h30<br></br>  UFSCar - sala 182 AT8</p>  
+       
+   <p className={classes.cards}>Palestras - Tema: Os significados do 20 de novembro<br></br> 19h<br></br>  FPMSC </p>  
+       
+   <img src={separador} className={classes.image} alt="separador"/>
+
+   <p className={classes.data}>Dia 17</p> <br></br>
+   <p className={classes.cards}>Cinema e Vídeo  <br></br> 19h30<br></br>  SESC, Teatro</p>  
+       
    <img src={separador} className={classes.image} alt="separador"/>
     
    
