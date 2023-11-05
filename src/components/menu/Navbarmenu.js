@@ -59,7 +59,7 @@ const Navbarmenu2 = () => {
                     
                     
                     <li  className="menu-item" >
-                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Home </NavLink> 
+                        <NavLink exact activeClassName='is-active' onClick={toggleClass} to={`/`}> Início </NavLink> 
                     </li>
                     
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={'/programacao'}> Programação </NavLink> </li>
