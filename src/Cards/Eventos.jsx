@@ -48,8 +48,9 @@ background:{
 
   backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize:'cover',
-  minHeight: '100vh'
+  backgroundSize: '100%',
+  backgroundAttachment: 'fixed',
+  
 },
 
 
@@ -146,7 +147,12 @@ cards: {
   margin: 'auto',
   color: 'dark-gray',
   paddingBottom: '2em',
-  lineHeight: '1.5em'
+  lineHeight: '1.5em',
+  "@media (max-width: 1280px)": {
+    fontSize: '1em',
+    
+   
+  },
 
 },
 data: {
@@ -154,7 +160,13 @@ data: {
   fontFamily: 'Elephant V1',
   fontSize: '1.5em',
   width: '60%',
-  margin: 'auto'
+  margin: 'auto',
+  "@media (max-width: 1280px)": {
+    fontSize: '1.1em',
+    
+   
+  }
+  
 
 },
 
