@@ -50,6 +50,9 @@ background:{
   backgroundRepeat: 'no-repeat',
   backgroundSize: '100%',
   backgroundAttachment: 'fixed',
+  "@media (max-width: 900px)": {
+    backgroundSize: 'cover',
+  }
   
 },
 
