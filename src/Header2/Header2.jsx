@@ -10,6 +10,7 @@ const useStyles = makeStyles ((theme) => ({
         
       backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/TemplateSlide_capa.jpg'})`,
       backgroundRepeat: 'no-repeat',
+         
       backgroundSize: 'cover',
         display: 'flex',
         justifyContent: 'center',
@@ -17,6 +18,7 @@ const useStyles = makeStyles ((theme) => ({
         height: '90vh',
         width: '100%',
         flexDirection: 'column',
+      
 
         "@media (max-width: 900px)": {
           backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/capa.png'})`
@@ -58,6 +60,7 @@ const useStyles = makeStyles ((theme) => ({
     fontFamily:'Elephant V1, sans-serif',
     color: 'black',
     margin: '0',
+   
 
     "@media (max-width: 900px)": {
       fontSize: '1.5em',
