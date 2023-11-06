@@ -228,7 +228,8 @@ li {
 
 ul.main-menu {
 
-
+  position: relative;
+  top: 10px;
   margin: 0 auto;
   width: 70vw;
   float: right;
@@ -277,7 +278,8 @@ ul.main-menu {
   padding-top: 10px;
 }
 .main-nav .menu-item a {margin: 10px 17px;text-align: center;color: #ffffff;}
-.main-nav  ul.main-menu {display: none}
+.main-nav  ul.main-menu {display: none; position: relative; top: 100px; 
+                }
 .main-nav .sub__menus__arrows:hover .sub__menus {margin: 10px;left: 0;right: 0;}
 .sub__menus__Active{display: block!important;margin: 0 auto;left: 0;right: 0;}
 .sub__menus__Active2{display: block!important;}
