@@ -38,6 +38,10 @@ const useStyles = makeStyles ((theme) => ({
       fontFamily:'Elephant V1, sans-serif',
       color: 'black',
       margin: '0',
+      paddingTop: '1em',
+      backgroundColor: 'white',
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
+      
 
       "@media (max-width: 900px)": {
         fontSize: '2em',
@@ -53,13 +57,15 @@ const useStyles = makeStyles ((theme) => ({
   },
 
   subtitle1: {
-
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
     width: '100%',
     fontSize: '2em',
     textAlign: 'center',
     fontFamily:'Elephant V1, sans-serif',
     color: 'black',
     margin: '0',
+    paddingBottom: '1em',
+   
    
 
     "@media (max-width: 900px)": {
