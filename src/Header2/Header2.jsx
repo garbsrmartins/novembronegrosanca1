@@ -40,7 +40,7 @@ const useStyles = makeStyles ((theme) => ({
       margin: '0',
       paddingTop: '1em',
       backgroundColor: 'white',
-      backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
+      backgroundColor: '#e7be1a',
       
 
       "@media (max-width: 900px)": {
@@ -57,7 +57,7 @@ const useStyles = makeStyles ((theme) => ({
   },
 
   subtitle1: {
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/texturapapel.png'})`,
+    backgroundColor: '#e7be1a',
     width: '100%',
     fontSize: '2em',
     textAlign: 'center',
