@@ -7,6 +7,7 @@ import Sobre from '../Cards/Sobre';
 
 
 
+
 const useStyles = makeStyles((theme) => ({
 
     root: {
@@ -26,7 +27,7 @@ function Home2() {
      
       <CssBaseline/>
       <Header2/>
-      
+     
       <Sobre/>
       <Footer/>
     </div>
