@@ -196,7 +196,7 @@ function CardsQuartos() {
     <>
    <div className={classes.background}>
    <div className={classes.title2}> Programação</div>
-    <p className={classes.data}>Dia 5</p> <br></br>
+    <p className={classes.data}>Dia 5-</p> <br></br>
    <p className={classes.cards}>Show Leci Brandão e Rappin Hood<br></br>Prefeitura de São Carlos (CEMAC)<br></br> 20h às 22h<br></br> Av. Bruno Ruggiero  </p>
    <img src={separador} className={classes.image} alt="separador"/>
    
