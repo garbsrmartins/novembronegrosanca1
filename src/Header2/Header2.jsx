@@ -39,7 +39,7 @@ const useStyles = makeStyles ((theme) => ({
       color: 'black',
       margin: '0',
       paddingTop: '1em',
-      backgroundColor: 'white',
+   
       backgroundColor: '#e7be1a',
       
 
