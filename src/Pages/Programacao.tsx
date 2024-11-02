@@ -1,6 +1,6 @@
-import { makeStyles, Typography } from '@material-ui/core';
+import { FormControl, InputLabel, makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Chip} from '@mui/material';
+import { Chip } from '@mui/material';
 import { addDays, isBefore, isSameDay } from 'date-fns';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -118,11 +118,11 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
       <div className={classes.opacity}>
         <div className={classes.eventoPage}>
           <div className={classes.eventHeader}>
-            {/*<FormControl>
+            <FormControl>
               <InputLabel variant="standard">
                 Exibir
               </InputLabel>
-            <Select variant='standard'
+              <Select variant='standard'
                 value={selectedFilter}
                 onChange={(e) => handleFilterChange(e.target.value as string)}
                 displayEmpty
@@ -132,7 +132,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
                 <MenuItem value="7dias">Próximos 7 Dias</MenuItem>
                 <MenuItem value="hoje">Hoje</MenuItem>
               </Select>
-            </FormControl>*/}
+            </FormControl>
 
             <Chip onClick={handleShare} color='success' label="Compartilhar no WhatsApp" icon={<WhatsAppIcon />} />
           </div>
