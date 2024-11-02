@@ -1,9 +1,8 @@
-// Programacao.tsx
-import { InputLabel, makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { Chip, FormControl } from '@mui/material';
+import { Chip} from '@mui/material';
 import { addDays, isBefore, isSameDay } from 'date-fns';
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import EventoCard from '../Cards/EventoCard';
 import { EventoInterface } from '../constants';
@@ -72,11 +71,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
   const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
 
-  useEffect(() => {
-    setSelectedFilter(filtro || 'todos');
-  }, [filtro]);
-
-  useEffect(() => {
+  const filtrarEventos = useCallback(() => {
     const hoje = new Date();
     let eventosFiltrados = [...eventos];
 
@@ -104,11 +99,14 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
     setFilteredEvents(eventosFiltrados);
   }, [eventos, selectedFilter]);
 
+  useEffect(() => {
+    filtrarEventos();
+  }, [filtrarEventos]);
+
   const handleFilterChange = (filtro: string) => {
     setSelectedFilter(filtro);
     navigate(`/programacao/${filtro}`);
   };
-
   const handleShare = () => {
     const whatsappUrl = `https://wa.me/?text=Confira as novidades da Agenda Unificada do Novembro Negro Sanca: ${encodeURIComponent(window.location.href)}`;
     window.open(whatsappUrl, '_blank');
@@ -120,11 +118,11 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
       <div className={classes.opacity}>
         <div className={classes.eventoPage}>
           <div className={classes.eventHeader}>
-            <FormControl>
+            {/*<FormControl>
               <InputLabel variant="standard">
                 Exibir
               </InputLabel>
-              <Select variant='standard'
+            <Select variant='standard'
                 value={selectedFilter}
                 onChange={(e) => handleFilterChange(e.target.value as string)}
                 displayEmpty
@@ -134,7 +132,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
                 <MenuItem value="7dias">Próximos 7 Dias</MenuItem>
                 <MenuItem value="hoje">Hoje</MenuItem>
               </Select>
-            </FormControl>
+            </FormControl>*/}
 
             <Chip onClick={handleShare} color='success' label="Compartilhar no WhatsApp" icon={<WhatsAppIcon />} />
           </div>
@@ -150,7 +148,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
           ) : (
             // Lista de Eventos
             filteredEvents.map((evento) => (
-              <EventoCard key={`${evento.data.toISOString()}-${evento.titulo}`} evento={evento} />
+              <EventoCard key={evento.data.toString()} evento={evento} />
             ))
           )}
         </div>
