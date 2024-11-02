@@ -47,7 +47,7 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
     },
     {
         data: new Date('2024-11-22T18:18:00'),
-        horario: '18H - 21H',
+        horario: '18H',
         duracao: '3 horas',
         titulo: 'Palestra sobre acesso e permanência negra no ensino superior ',
         descricao: 'Palestra sobre ações afirmativas raciais, necessidades e ações em permanência estudantil voltadas a estudantes negros e negras no ensino superior',
@@ -75,7 +75,7 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
     },
     {
         data: new Date('2024-11-10T16:00:00'),
-        horario: '16H - 22H',
+        horario: '16H',
         duracao: '6 horas',
         titulo: 'Batalha da Alcatéia - 2º Festival de Rap na Estação',
         descricao: 'Festival musical gratuito, com ênfase no gênero Rap, unindo e celebrando o movimento Hip Hop para maior valorização da nossa cultura e dos artistas da cidade de São Carlos. ',
@@ -117,7 +117,7 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
     },
     {
         data: new Date('2024-11-13T19:00:00'),
-        horario: '11H50m - 12h30',
+        horario: '11H50m',
         duracao: '1 hora',
         titulo: '2ª Vamos nos Aquilombar - FOTO UFSCar NEGRA',
         descricao: 'A 2ª edição do Vamos nos Aquilombar - FOTO UFSCar NEGRA celebra o Novembro Negro com uma foto coletiva que simboliza a força, a diversidade e a união das pessoas pretas e pardas da comunidade universitária. A iniciativa é promovida pela Secretaria Geral de Ações Afirmativas, Diversidade e Equidade (SAADE) e pelo Núcleo de Estudos Afro-Brasileiros (Neab), reafirmando o compromisso da UFSCar com a valorização e a visibilidade da população negra.',
@@ -131,7 +131,7 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
     },
     {
         data: new Date('2024-11-19T18:00:00'),
-        horario: '18H - 20H',
+        horario: '18H',
         duracao: '2 horas',
         titulo: 'Sarau Cultural Celinha Pereira ',
         descricao: 'O Sarau surge a partir de diálogo com amigo próximo de Celinha que busca resgatar a cultura poética na cidade.Com a finalidade de dar continuidade a isso, propomos a criação do Sarau e convidaremos artistas negres a participarem.',
@@ -145,7 +145,7 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
     },
     {
         data: new Date('2024-11-12T19:00:00'),
-        horario: '19H - 21H',
+        horario: '19H',
         duracao: '2 horas',
         titulo: 'Instituto Lumbandanga Apresenta: SoulJazz e Afrosil - Show Musical',
         descricao: 'No dia 12 de novembro as 19h no Centro de Convivência área 1  da USP São Carlos, o Instituto Lumbandanga apresenta dois shows com os projetos SoulJazz e Afrosil. SoulJazz, fundada em 2006, apresenta uma proposta de resgate da riqueza das características do povo negro realizando releituras da musica instrumental e acrescentando novas rítmicas nos standards de Jazz.Afrosil  fundada em 2023, formado em sua maioria por alunos PEC-G de diversos países do continente Africano. com o objetivo de construir um intercâmbio cultural e musical entre a sonoridade brasileira e africana.',

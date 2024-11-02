@@ -68,7 +68,7 @@ const Programacao: React.FC = () => {
   console.log('EVENTOS_2', eventos)
 
   const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>(eventos);
-  const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
+  const [selectedFilter, setSelectedFilter] = useState<string>(filtro || '15dias');
 
 
   const filtrarEventos = useCallback(() => {
