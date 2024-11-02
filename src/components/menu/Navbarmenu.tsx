@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import { FiAlignRight, FiXCircle } from "react-icons/fi";
+import { NavLink } from 'react-router-dom';
 import './NavBarMenu.css';
 
 const Navbarmenu2 = () => {
@@ -32,11 +32,11 @@ const Navbarmenu2 = () => {
                         <nav className="main-nav">
                             {/* Responsive Menu Button */}
                             {isResponsiveclose ? (
-                                <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass}>
+                                <span className="menubar__button" onClick={toggleClass}>
                                     <FiXCircle />
                                 </span>
                             ) : (
-                                <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass}>
+                                <span className="menubar__button" onClick={toggleClass}>
                                     <FiAlignRight />
                                 </span>
                             )}
@@ -53,7 +53,7 @@ const Navbarmenu2 = () => {
                                 </li>
                                 <li className="menu-item">
                                     <NavLink
-                                        to="/programacao"
+                                        to="/programacao/todos"  // Set to send "todos" by default
                                         className={({ isActive }) => (isActive ? 'is-active' : '')}
                                         onClick={toggleClass}
                                     >

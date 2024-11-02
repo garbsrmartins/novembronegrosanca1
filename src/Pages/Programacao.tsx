@@ -64,6 +64,7 @@ interface ProgramacaoProps {
 }
 
 const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
+  console.log(eventos, 'eventos');
   const classes = useStyles();
   const { filtro } = useParams<{ filtro?: string }>();
   const navigate = useNavigate();
@@ -148,7 +149,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
           ) : (
             // Lista de Eventos
             filteredEvents.map((evento) => (
-              <EventoCard key={evento.data.toString()} evento={evento} />
+              <EventoCard key={`${evento.data.toString()}_${evento.titulo}`} evento={evento} />
             ))
           )}
         </div>
