@@ -64,12 +64,12 @@ const Programacao: React.FC = () => {
   const classes = useStyles();
   const { filtro } = useParams<{ filtro?: string }>();
   const navigate = useNavigate();
+  const eventos = EVENTOS_CONSTANTS;
+  console.log('EVENTOS', eventos)
 
   const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
 
-  // Usando EVENTOS_CONSTANTS diretamente
-  const eventos = EVENTOS_CONSTANTS;
 
   const filtrarEventos = useCallback(() => {
     const hoje = new Date();
@@ -149,7 +149,7 @@ const Programacao: React.FC = () => {
           ) : (
             // Lista de Eventos
             filteredEvents.map((evento) => (
-              <EventoCard key={`${evento.data.toString()}_${evento.titulo}`} evento={evento} />
+              <EventoCard key={`${evento.data.toString()}_${evento.titulo.trim()}`} evento={evento} />
             ))
           )}
         </div>
