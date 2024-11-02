@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '1rem',
     display: 'flex',
     justifyContent: 'center',
-    gap: '1rem', // Espaçamento entre os botões
+    gap: '1rem',
     "@media (max-width: 900px)": {
       flexDirection: 'column',
     },
