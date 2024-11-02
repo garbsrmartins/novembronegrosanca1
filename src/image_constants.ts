@@ -22,5 +22,4 @@ export const IMAGE_CONSTANTS: CarouselImage[] = [
     { title: '', src: Img8 },
     { title: '', src: Img9 },
     { title: '', src: Img10 },
-
 ];
