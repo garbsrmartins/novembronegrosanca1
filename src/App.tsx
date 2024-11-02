@@ -15,7 +15,7 @@ function App() {
       <Navbarmenu2 />
       <Routes>
         <Route path="/" element={<Home2 />} />
-        <Route path="/programacao/:filtro?" element={<Programacao eventos={eventos} />} />
+        <Route path="/programacao" element={<Programacao eventos={eventos} />} />
       </Routes>
       <Footer />
     </>
