@@ -65,7 +65,7 @@ const Programacao: React.FC = () => {
   const { filtro } = useParams<{ filtro?: string }>();
   const navigate = useNavigate();
   const eventos = EVENTOS_CONSTANTS;
-  console.log('EVENTOS_2', eventos)
+  console.log('EVENTOS_2', filtro)
 
   const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>(eventos);
   const [selectedFilter, setSelectedFilter] = useState<string>(filtro || '15dias');
