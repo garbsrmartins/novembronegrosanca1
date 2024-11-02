@@ -1,6 +1,7 @@
 
 
 export interface EventoInterface {
+    key: number;
     data: Date;  // data do evento
     horario: string;  // horário (formato H:mm extraído do Date)
     duracao: string;  // duração
@@ -27,7 +28,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/2UQMPVpfxxQzfMh88'
         },
         status: 'ativo',
-        publico: 'Aberto ao público.'
+        publico: 'Aberto ao público.',
+        key: 0
     },
     {
         data: new Date('2024-11-09T09:00:00'),
@@ -40,7 +42,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/5xnTYUYdivNRpv9ZA'
         },
         status: 'ativo',
-        publico: 'Pessoas interessadas em experimentação artistica. Pode ou não ter experiencia previa. '
+        publico: 'Pessoas interessadas em experimentação artistica. Pode ou não ter experiencia previa. ',
+        key: 1
     },
     {
         data: new Date('2024-11-22T18:18:00'),
@@ -53,7 +56,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/2UQMPVpfxxQzfMh88'
         },
         status: 'ativo',
-        publico: 'Estudantes e docentes do ensino superior e outras pessoas interessadas.'
+        publico: 'Estudantes e docentes do ensino superior e outras pessoas interessadas.',
+        key: 3
     },
     {
         data: new Date('2024-11-10T16:00:00'),
@@ -66,7 +70,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/ssUhYNAX1KqosNoo9'
         },
         status: 'ativo',
-        publico: 'Aberto ao público'
+        publico: 'Aberto ao público',
+        key: 4
     },
     {
         data: new Date('2024-11-10T16:00:00'),
@@ -79,7 +84,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/JNjSmL8bagksK13D9'
         },
         status: 'ativo',
-        publico: 'Todos que gostam de Hip Hop.'
+        publico: 'Todos que gostam de Hip Hop.',
+        key: 5
     },
     {
         data: new Date('2024-11-11T19:00:00'),
@@ -92,7 +98,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: undefined
         },
         status: 'ativo',
-        publico: 'Aberto ao público.'
+        publico: 'Aberto ao público.',
+        key: 6
     },
     {
         data: new Date('2024-11-20T14:00:00'),
@@ -105,7 +112,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/oHt7ksVadNFZszAG8'
         },
         status: 'ativo',
-        publico: 'Infanto/juvenil/ adultos '
+        publico: 'Infanto/juvenil/ adultos ',
+        key: 7
     },
     {
         data: new Date('2024-11-13T19:00:00'),
@@ -118,7 +126,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/hbuhygi2oGUqf4qX9'
         },
         status: 'ativo',
-        publico: 'Toda comunidade acadêmica da UFSCAR.'
+        publico: 'Toda comunidade acadêmica da UFSCAR.',
+        key: 8
     },
     {
         data: new Date('2024-11-19T18:00:00'),
@@ -131,7 +140,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
         local: {
             name: 'Grêmio Recreativo Flor de Maio',
             link: 'https://maps.app.goo.gl/2UQMPVpfxxQzfMh88'
-        }
+        },
+        key: 9
     },
     {
         data: new Date('2024-11-12T19:00:00'),
@@ -144,7 +154,8 @@ export const EVENTOS_CONSTANTS: EventoInterface[] = [
             link: 'https://maps.app.goo.gl/L9qX3c8Ssp55qWtW6'
         },
         status: 'ativo',
-        publico: 'Aberto ao público.'
+        publico: 'Aberto ao público.',
+        key: 10
     },
 
 ]

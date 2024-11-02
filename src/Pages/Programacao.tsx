@@ -149,7 +149,7 @@ const Programacao: React.FC = () => {
           ) : (
             // Lista de Eventos
             filteredEvents.map((evento) => (
-              <EventoCard key={`${evento.data.toString()}_${evento.titulo.trim()}`} evento={evento} />
+              <EventoCard key={evento.key.toString()} evento={evento} />
             ))
           )}
         </div>
