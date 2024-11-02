@@ -67,7 +67,7 @@ const Programacao: React.FC = () => {
   const eventos = EVENTOS_CONSTANTS;
   console.log('EVENTOS', eventos)
 
-  const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>([]);
+  const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>(eventos);
   const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
 
 
