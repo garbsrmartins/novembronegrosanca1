@@ -1,3 +1,4 @@
+// Programacao.tsx
 import { FormControl, InputLabel, makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Chip } from '@mui/material';
@@ -5,7 +6,7 @@ import { addDays, isBefore, isSameDay } from 'date-fns';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import EventoCard from '../Cards/EventoCard';
-import { EventoInterface } from '../constants';
+import { EventoInterface, EVENTOS_CONSTANTS } from '../constants'; // Importando eventos diretamente
 import Header2 from '../Header2/Header2';
 
 const useStyles = makeStyles({
@@ -59,18 +60,16 @@ const useStyles = makeStyles({
   }
 });
 
-interface ProgramacaoProps {
-  eventos: EventoInterface[];
-}
-
-const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
-  console.log(eventos, 'eventos');
+const Programacao: React.FC = () => {
   const classes = useStyles();
   const { filtro } = useParams<{ filtro?: string }>();
   const navigate = useNavigate();
 
   const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>([]);
   const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
+
+  // Usando EVENTOS_CONSTANTS diretamente
+  const eventos = EVENTOS_CONSTANTS;
 
   const filtrarEventos = useCallback(() => {
     const hoje = new Date();
@@ -108,6 +107,7 @@ const Programacao: React.FC<ProgramacaoProps> = ({ eventos }) => {
     setSelectedFilter(filtro);
     navigate(`/programacao/${filtro}`);
   };
+
   const handleShare = () => {
     const whatsappUrl = `https://wa.me/?text=Confira as novidades da Agenda Unificada do Novembro Negro Sanca: ${encodeURIComponent(window.location.href)}`;
     window.open(whatsappUrl, '_blank');
