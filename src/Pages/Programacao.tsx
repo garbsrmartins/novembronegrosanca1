@@ -1,12 +1,10 @@
 // Programacao.tsx
-import { FormControl, InputLabel, makeStyles, MenuItem, Select, Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Chip } from '@mui/material';
-import { addDays, isBefore, isSameDay } from 'date-fns';
-import React, { useCallback, useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React from 'react';
 import EventoCard from '../Cards/EventoCard';
-import { EventoInterface, EVENTOS_CONSTANTS } from '../constants'; // Importando eventos diretamente
+import { EVENTOS_CONSTANTS } from '../constants'; // Importando eventos diretamente
 import Header2 from '../Header2/Header2';
 
 const useStyles = makeStyles({
@@ -62,51 +60,51 @@ const useStyles = makeStyles({
 
 const Programacao: React.FC = () => {
   const classes = useStyles();
-  const { filtro } = useParams<{ filtro?: string }>();
-  const navigate = useNavigate();
+  // const { filtro } = useParams<{ filtro?: string }>();
+  // const navigate = useNavigate();
   const eventos = EVENTOS_CONSTANTS;
   console.log('EVENTOS', eventos)
 
-  const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>(eventos);
-  const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
+  // const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>(eventos);
+  // const [selectedFilter, setSelectedFilter] = useState<string>(filtro || 'todos');
 
 
-  const filtrarEventos = useCallback(() => {
-    const hoje = new Date();
-    let eventosFiltrados = [...eventos];
+  // const filtrarEventos = useCallback(() => {
+  //   const hoje = new Date();
+  //   let eventosFiltrados = [...eventos];
 
-    switch (selectedFilter) {
-      case 'hoje':
-        eventosFiltrados = eventosFiltrados.filter((evento) =>
-          isSameDay(evento.data, hoje)
-        );
-        break;
-      case '7dias':
-        eventosFiltrados = eventosFiltrados.filter((evento) =>
-          isBefore(evento.data, addDays(hoje, 7))
-        );
-        break;
-      case '15dias':
-        eventosFiltrados = eventosFiltrados.filter((evento) =>
-          isBefore(evento.data, addDays(hoje, 15))
-        );
-        break;
-      default:
-        break;
-    }
+  //   switch (selectedFilter) {
+  //     case 'hoje':
+  //       eventosFiltrados = eventosFiltrados.filter((evento) =>
+  //         isSameDay(evento.data, hoje)
+  //       );
+  //       break;
+  //     case '7dias':
+  //       eventosFiltrados = eventosFiltrados.filter((evento) =>
+  //         isBefore(evento.data, addDays(hoje, 7))
+  //       );
+  //       break;
+  //     case '15dias':
+  //       eventosFiltrados = eventosFiltrados.filter((evento) =>
+  //         isBefore(evento.data, addDays(hoje, 15))
+  //       );
+  //       break;
+  //     default:
+  //       break;
+  //   }
 
-    eventosFiltrados.sort((a, b) => a.data.getTime() - b.data.getTime());
-    setFilteredEvents(eventosFiltrados);
-  }, [eventos, selectedFilter]);
+  //   eventosFiltrados.sort((a, b) => a.data.getTime() - b.data.getTime());
+  //   setFilteredEvents(eventosFiltrados);
+  // }, [eventos, selectedFilter]);
 
-  useEffect(() => {
-    filtrarEventos();
-  }, [filtrarEventos]);
+  // useEffect(() => {
+  //   filtrarEventos();
+  // }, [filtrarEventos]);
 
-  const handleFilterChange = (filtro: string) => {
-    setSelectedFilter(filtro);
-    navigate(`/programacao/${filtro}`);
-  };
+  // const handleFilterChange = (filtro: string) => {
+  //   setSelectedFilter(filtro);
+  //   navigate(`/programacao/${filtro}`);
+  // };
 
   const handleShare = () => {
     const whatsappUrl = `https://wa.me/?text=Confira as novidades da Agenda Unificada do Novembro Negro Sanca: ${encodeURIComponent(window.location.href)}`;
@@ -119,7 +117,7 @@ const Programacao: React.FC = () => {
       <div className={classes.opacity}>
         <div className={classes.eventoPage}>
           <div className={classes.eventHeader}>
-            <FormControl>
+            {/* <FormControl>
               <InputLabel variant="standard">
                 Exibir
               </InputLabel>
@@ -133,22 +131,22 @@ const Programacao: React.FC = () => {
                 <MenuItem value="7dias">Próximos 7 Dias</MenuItem>
                 <MenuItem value="hoje">Hoje</MenuItem>
               </Select>
-            </FormControl>
+            </FormControl> */}
 
             <Chip onClick={handleShare} color='success' label="Compartilhar no WhatsApp" icon={<WhatsAppIcon />} />
           </div>
 
           {/* Verificação de Eventos Filtrados */}
-          {filteredEvents.length === 0 ? (
+          {eventos.length === 0 ? (
             <div className={classes.message}>
               <Typography variant="h6">Não foi encontrado nenhum evento para a pesquisa selecionada.</Typography>
-              <button className={classes.verProgramacaoBtn} onClick={() => handleFilterChange('todos')} >
+              {/* <button className={classes.verProgramacaoBtn} onClick={() => handleFilterChange('todos')} >
                 Ver Programação Completa
-              </button>
+              </button> */}
             </div>
           ) : (
             // Lista de Eventos
-            filteredEvents.map((evento) => (
+            eventos.map((evento) => (
               <EventoCard key={`${evento.data.toString()}_${evento.titulo.trim()}`} evento={evento} />
             ))
           )}
