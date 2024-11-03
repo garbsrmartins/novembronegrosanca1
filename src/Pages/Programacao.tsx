@@ -31,15 +31,16 @@ const fetchEventos = async (): Promise<EventoInterface[]> => {
 // Defina os estilos
 const useStyles = makeStyles({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    minHeight: '100vh',
+    background: '#d8c9af',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
   },
   opacity: {
     opacity: 0.95,
   },
   eventoPage: {
-    maxWidth: 800,
     width: '100%',
     padding: '20px',
   },
@@ -142,47 +143,49 @@ const Programacao: React.FC = () => {
       <Header2 />
       <div className={classes.opacity}>
         <div className={classes.eventoPage}>
-          {/* Exibe carregamento enquanto os eventos estão sendo carregados */}
-          {loading ? (
-            <CircularProgress />
-          ) : (
-            <>
-              <div className={classes.eventHeader}>
-                <FormControl>
-                  <InputLabel variant="standard">Exibir</InputLabel>
-                  <Select
-                    variant='standard'
-                    value={selectedFilter}
-                    onChange={(e) => handleFilterChange(e.target.value as string)}
-                    displayEmpty
-                  >
-                    <MenuItem value="todos">Programação Completa</MenuItem>
-                    <MenuItem value="15dias">Próximos 15 Dias</MenuItem>
-                    <MenuItem value="7dias">Próximos 7 Dias</MenuItem>
-                    <MenuItem value="hoje">Hoje</MenuItem>
-                  </Select>
-                </FormControl>
-                <Chip onClick={handleShare} color='success' label="Compartilhar no WhatsApp" icon={<WhatsAppIcon />} />
-              </div>
 
-              {/* Renderiza a lista de eventos ou mensagem se vazia */}
-              {filteredEvents.length === 0 ? (
-                <div className={classes.message}>
-                  <Typography variant="h6">Não foi encontrado nenhum evento para a pesquisa selecionada.</Typography>
-                  <button className={classes.verProgramacaoBtn} onClick={() => handleFilterChange('todos')} >
-                    Ver Programação Completa
-                  </button>
-                </div>
-              ) : (
-                filteredEvents.map((evento) => (
-                  <EventoCard key={evento.key.toString()} evento={evento} />
-                ))
-              )}
-            </>
+          <div className={classes.eventHeader}>
+            <FormControl>
+              <InputLabel variant="standard">Exibir</InputLabel>
+              <Select
+                variant='standard'
+                value={selectedFilter}
+                onChange={(e) => handleFilterChange(e.target.value as string)}
+                displayEmpty
+              >
+                <MenuItem value="todos">Programação Completa</MenuItem>
+                <MenuItem value="15dias">Próximos 15 Dias</MenuItem>
+                <MenuItem value="7dias">Próximos 7 Dias</MenuItem>
+                <MenuItem value="hoje">Hoje</MenuItem>
+              </Select>
+            </FormControl>
+            <Chip onClick={handleShare} color='success' label="Compartilhar no WhatsApp" icon={<WhatsAppIcon />} />
+          </div>
+
+          {/* Renderiza "Carregando" ou a lista de eventos */}
+          {loading ? (
+            <div style={{ width: '100%', textAlign: 'center' }}>
+              <Typography variant="h5">Carregando...</Typography>
+            </div>
+          ) : (
+            filteredEvents.length === 0 ? (
+              <div className={classes.message}>
+                <Typography variant="h6">Não foi encontrado nenhum evento para a pesquisa selecionada.</Typography>
+                <button className={classes.verProgramacaoBtn} onClick={() => handleFilterChange('todos')}>
+                  Ver Programação Completa
+                </button>
+              </div>
+            ) : (
+              filteredEvents.map((evento) => (
+                <EventoCard key={evento.key.toString()} evento={evento} />
+              ))
+            )
           )}
+
         </div>
       </div>
     </div>
+
   );
 };
 
