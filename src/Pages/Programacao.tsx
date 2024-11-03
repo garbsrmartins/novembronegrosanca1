@@ -70,6 +70,7 @@ const Programacao: React.FC = () => {
   const [filteredEvents, setFilteredEvents] = useState<EventoInterface[]>(eventos);
   const [selectedFilter, setSelectedFilter] = useState<string>(filtro || '15dias');
 
+  console.log(selectedFilter, 'filtros');
 
   const filtrarEventos = useCallback(() => {
     const hoje = new Date();
@@ -92,10 +93,12 @@ const Programacao: React.FC = () => {
         );
         break;
       default:
+        eventosFiltrados = eventos;
         break;
     }
 
     eventosFiltrados.sort((a, b) => a.data.getTime() - b.data.getTime());
+    console.log(eventosFiltrados)
     setFilteredEvents(eventosFiltrados);
   }, [eventos, selectedFilter]);
 
