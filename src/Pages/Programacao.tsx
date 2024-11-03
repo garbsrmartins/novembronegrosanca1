@@ -1,20 +1,19 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {
-  CircularProgress,
+  Chip,
   FormControl,
   InputLabel,
   MenuItem,
   Select,
-  Typography,
-  Chip
+  Typography
 } from '@mui/material';
-import { useParams, useNavigate } from 'react-router-dom';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { makeStyles } from '@mui/styles';
-import EventoCard from '../Cards/EventoCard';
-import Header2 from '../Header2/Header2';
 import { addDays, isBefore, isSameDay } from 'date-fns';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import EventoCard from '../Cards/EventoCard';
 import { EventoInterface, EVENTOS_CONSTANTS } from '../constants';
+import Header2 from '../Header2/Header2';
 
 // Defina a interface do evento
 const eventoConstants = EVENTOS_CONSTANTS;
