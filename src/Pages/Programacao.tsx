@@ -11,9 +11,6 @@ const useStyles = makeStyles({
   root: {
     minHeight: '100vh',
     background: '#d8c9af',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
   },
   opacity: {
     opacity: 0.95,
