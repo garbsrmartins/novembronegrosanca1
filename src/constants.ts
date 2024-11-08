@@ -1,22 +1,8 @@
 
 
-export interface EventoInterface {
-    key: number;
-    data: Date;  // data do evento
-    horario: string;  // horário (formato H:mm extraído do Date)
-    duracao: string;  // duração
-    titulo: string;
-    descricao: string;
-    publico: string;
-    status: 'ativo' | 'adiado' | 'cancelado',
-    local: {
-        name: string;
-        link?: string;  // link para o Google Maps
-    };
-    img?: string;  // caminho para a imagem local do evento
-}
 
-export const EVENTOS_CONSTANTS: EventoInterface[] = [
+
+export const EVENTOS_CONSTANTS = [
     {
         data: new Date('2024-11-09T19:00:00'),
         horario: '19H',

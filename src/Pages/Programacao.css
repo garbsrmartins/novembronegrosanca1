@@ -1,0 +1,68 @@
+.root {
+    min-height: 100vh;
+    background: #d8c9af;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+
+.evento-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.evento-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.evento-data {
+    font-size: 21px;
+    margin: .2rem 0;
+}
+
+.evento-local {
+    font-size: 19px;
+    margin-bottom: .5rem;
+}
+
+.evento-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #efefee;
+    min-height: 8rem;
+    padding: 1rem;
+    width: 60%;
+    margin: 1rem 0;
+    font-family: Roboto, sans-serif;
+    border-radius: 5px;
+    box-shadow: -1px 10px 23px 0px rgba(48, 42, 36, 0.4);
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(48, 42, 36, 0.4);
+    -moz-box-shadow: -1px 10px 23px 0px rgba(48, 42, 36, 0.4);
+}
+
+.red-card {
+    background-color: #a02929;
+}
+
+.green-card {
+    background-color: #315e1f;
+}
+
+.yellow-card {
+    background-color: #f0b619;
+    color: rgb(32, 32, 32);
+}
+
+.black-card {
+    background-color: rgb(32, 32, 32);
+}
