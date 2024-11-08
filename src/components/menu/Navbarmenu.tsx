@@ -53,7 +53,7 @@ const Navbarmenu2 = () => {
                                 </li>
                                 <li className="menu-item">
                                     <NavLink
-                                        to="/programacao/todos"  // Set to send "todos" by default
+                                        to="/programacao"
                                         className={({ isActive }) => (isActive ? 'is-active' : '')}
                                         onClick={toggleClass}
                                     >
