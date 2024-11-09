@@ -1,0 +1,128 @@
+.root {
+    min-height: 100vh;
+    background: #d8c9af;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    width: 100%;
+}
+
+.evento-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.evento-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.evento-data {
+    font-size: 21px;
+    margin: .2rem 0;
+}
+
+.evento-local {
+    font-size: 19px;
+    margin-bottom: .5rem;
+}
+
+.evento-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #efefee;
+    min-height: 8rem;
+    padding: 1rem;
+    width: 60%;
+    margin: 1rem 0;
+    font-family: Roboto, sans-serif;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: -1px 10px 23px 0px rgba(48, 42, 36, 0.4);
+    -webkit-box-shadow: -1px 10px 23px 0px rgba(48, 42, 36, 0.4);
+    -moz-box-shadow: -1px 10px 23px 0px rgba(48, 42, 36, 0.4);
+}
+
+
+
+.main-card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #272727;
+    min-height: 8rem;
+    padding: 1rem;
+    width: 60%;
+    margin: 1rem 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.agenda-unificada-description {
+    text-align: justify;
+    font-size: 20px;
+    margin: .5rem 0;
+    font-family: Roboto, sans-serif;
+}
+
+.agenda-titulo {
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.separator {
+    margin: 1rem;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    color: #272727;
+
+}
+
+.agenda-subtile {
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    margin-top: .5rem;
+}
+
+.button-grp {
+    margin: 1rem;
+}
+
+.red-card {
+    background-color: #a02929;
+}
+
+.green-card {
+    background-color: #315e1f;
+}
+
+.yellow-card {
+    background-color: #f0b619;
+    color: rgb(32, 32, 32);
+}
+
+.black-card {
+    background-color: rgb(32, 32, 32);
+}
+
+@media (max-width: 768px) {
+
+    .evento-card,
+    .main-card {
+        width: 85%;
+    }
+}

@@ -12,7 +12,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home2 />} />
         <Route path="/programacao" element={<Programacao />} />
-        <Route path="/programacao/:filtro" element={<Programacao />} /> {/* Rota com filtro */}
       </Routes>
       <Footer />
     </>
